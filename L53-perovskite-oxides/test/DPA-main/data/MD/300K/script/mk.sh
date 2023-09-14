@@ -11,7 +11,7 @@ for ((i = 0; i <= 500; i += 5)); do
     mv "$dir_name.lammpstrj" last.dump
     python ../dump2pos.py 
 #    python ../dump2lmp.py
-#    python ../replace.py
+   python ../replace.py
     python ../pos2stru.py
     cd ..
     cp INPUT input.lammps job.json "$dir_name"
